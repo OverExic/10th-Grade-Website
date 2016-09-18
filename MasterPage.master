@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>KnowHow</title>
+    <link href="StyleSheet.css" rel="Stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            font-size: xx-large;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="Default.aspx">Home</a></li>
+        <li><a class="active" href="Survey.aspx">Survey</a></li>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Lifestyle</a>
+            <div class="dropdown-content">
+                <a href="School.aspx">School</a> <a href="Travel.aspx">Travel</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Art</a>
+            <div class="dropdown-content">
+                <a href="Origami.aspx">Origami</a> <a href="Drawing.aspx">Drawing Tutorials</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Health</a>
+            <div class="dropdown-content">
+                <a href="Fitness.aspx">Fitness</a> <a href="First-Aid.aspx">First-Aid</a>
+            </div>
+        </div>
+        <% if (Session["user"] == "Guest")
+           {%>
+        <li style="float: right; list-style-type: none;"><a href='Login.aspx'>Login</a>
+        </li>
+        <li style="float: right; list-style-type: none;"><a href='Signup.aspx'>Register </a>
+        </li>
+        <%} %>
+        <% else if (Session["user"] == "Admin")
+           { %>
+        <li style="float: right; list-style-type: none;"><a href="Signout.aspx">Logout </a>
+        </li>
+        <li style="float: right; list-style-type: none;"><a href="AdminPage.aspx">Admin Page
+        </a></li>
+        <%}%>
+        <% else
+           {%>
+        <li style="float: right; list-style-type: none;"><a href="Signout.aspx">Logout </a>
+        </li>
+        <li style="float: right; list-style-type: none;"><a href="EditUser.aspx">Update Details</a>
+        </li>
+        <%}%>
+        <li style="float: right; list-style-type: none;"><a href="Test.aspx">Test</a></li>
+    </ul>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <span class="style1" style="color: white">Hello,
+        <%=Session["user"]%></span>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <span class="bottomleft" style="color: black">Number of times the site was visited:
+        <%=Application["Count"]%></span>
+</body>
+</html>

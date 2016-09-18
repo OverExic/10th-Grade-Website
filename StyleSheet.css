@@ -1,0 +1,270 @@
+﻿body 
+{
+    background-image:url("Images/Background Image.png");
+    background-repeat:no-repeat;
+    background-position-right top;
+    background-attachment:fixed;
+    
+}
+.bottomleft
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+} 
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family:Freestyle Script;
+    font-size:32px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #b30000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:#ffffcc ;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#ffffcc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: #b30000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color:#ffffcc}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1 
+{
+    font-family:Freestyle Script;
+    font-size:62px;
+    color:White;
+}
+
+h2
+{
+    font-size:92px;
+    font-family:Freestyle Script;
+    text-shadow: 1px 1px #F36C8C;
+    color: #ffffff;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    margin-bottom: 56px;
+    position:relative;
+    top:-4px;
+    left: -12px;
+}
+
+h3
+{
+    font-family:Freestyle Script;
+    font-size:72px;
+    color:#9ACD32;
+}
+
+h4
+{
+    text-align:left;
+    color:Black;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    margin-bottom: 56px;
+    
+}
+
+.answer
+{
+    color:Black;
+    text-align:left;
+    
+}
+div
+{
+    color:black;
+}
+
+table
+{
+    background-color:#F5F5DC;
+    text-align: left;
+        
+}
+
+table,td
+{
+    text-align:center;
+    border-collapse: collapse;
+    border:4px solid white;
+}
+
+ textarea:focus, input:focus {
+	border: 2px solid #900;
+}
+
+table
+{
+    font-family: Arial, Sans-Serif;
+    font-size: 13px;
+    background-color: #ffffcc;
+    padding: 10px;
+    text-align:center;
+    border:1px color;
+}
+
+
+table[type="text"], table textarea
+{
+    font-family: Arial, Sans-Serif;
+    font-size: 13px;
+    margin-bottom: 5px;
+    display: block;
+    padding: 4px;
+    border: solid 1px #85b1de;
+    width: 300px;
+}
+ 
+button
+{
+padding: 10px 20px 11px;
+font-size: 21px !important;
+background-color: #F36C8C;
+font-weight: bold;
+text-shadow: 1px 1px #F36C8C;
+color: #ffffff;
+border-radius: 100px;
+-moz-border-radius: 100px;
+-webkit-border-radius: 100px;
+border: 1px solid #F36C8C;
+cursor: pointer;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    width: 186px;
+    margin-top: 35px;
+}
+
+.button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 229px;
+  height: 208px;
+  content: "";
+  padding: 60px 0 0;
+  -webkit-border-radius: 0 10px 200px / 0 200px 14px 250px;
+  border-radius: 0 10px 200px / 0 200px 14px 250px;
+  font: normal 34px/1.3 "Gochi Hand", Helvetica, sans-serif;
+  color: rgba(255,0,106,0.58);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: -3px 5px 12px 0 rgba(0,0,0,0.1);
+  box-shadow: -3px 5px 12px 0 rgba(0,0,0,0.1);
+  -webkit-transform: rotateZ(-4deg);
+  transform: rotateZ(-4deg);
+    border-right-style: solid;
+    border-right-color: inherit;
+    border-right-width: 0;
+    border-top-style: solid;
+    border-top-color: inherit;
+    border-top-width: 0;
+    margin-right: 3px;
+}
+
+.button::after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  content: "";
+  top: 9px;
+  right: 0;
+  left: 122px;
+  border: none;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  font: normal medium/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: -webkit-radial-gradient(circle closest-side, rgba(25,119,196,1) 0, rgba(25,119,196,1) 4%, rgba(12,113,201,1) 77%, rgba(255,255,255,0) 89%, rgba(255,255,255,0) 100%), -webkit-radial-gradient(circle closest-side, rgba(0,0,0,0.4) 0, rgba(0,0,0,0.2) 81%, rgba(255,255,255,0) 92%, rgba(255,255,255,0) 100%), -webkit-radial-gradient(closest-side, rgba(64,150,238,1) 0, rgba(64,150,238,1) 100%), rgba(255,255,255,0.9);
+  background: -moz-radial-gradient(circle closest-side, rgba(25,119,196,1) 0, rgba(25,119,196,1) 4%, rgba(12,113,201,1) 77%, rgba(255,255,255,0) 89%, rgba(255,255,255,0) 100%), -moz-radial-gradient(circle closest-side, rgba(0,0,0,0.4) 0, rgba(0,0,0,0.2) 81%, rgba(255,255,255,0) 92%, rgba(255,255,255,0) 100%), -moz-radial-gradient(closest-side, rgba(64,150,238,1) 0, rgba(64,150,238,1) 100%), rgba(255,255,255,0.9);
+  background: radial-gradient(circle closest-side, rgba(25,119,196,1) 0, rgba(25,119,196,1) 4%, rgba(12,113,201,1) 77%, rgba(255,255,255,0) 89%, rgba(255,255,255,0) 100%), radial-gradient(circle closest-side, rgba(0,0,0,0.4) 0, rgba(0,0,0,0.2) 81%, rgba(255,255,255,0) 92%, rgba(255,255,255,0) 100%), radial-gradient(closest-side, rgba(64,150,238,1) 0, rgba(64,150,238,1) 100%), rgba(255,255,255,0.9);
+  background-repeat: no-repeat;
+  background-position: 96% -4%, 71% 43%, 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: 20px 20px, 20px 20px, auto auto;
+  background-size: 20px 20px, 20px 20px, auto auto;
+  -webkit-box-shadow: -4px 8px 5px 1px rgba(0,0,0,0.2) ;
+  box-shadow: -4px 8px 5px 1px rgba(0,0,0,0.2) ;
+  text-shadow: none;
+}
+
+select
+{
+    text-align:left;
+}
+
+td
+{
+    text-align:left;
+}
+
+span
+{
+    color:Red;
+}
+
+b
+{
+    font-size:72px;
+    text-align:center;
+}
+
+.img
+{
+  text-align:center;  
+}

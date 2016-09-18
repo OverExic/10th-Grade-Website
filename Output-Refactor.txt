@@ -1,0 +1,5 @@
+﻿Rename 'Default2' to 'Register'
+
+C:\Users\Admin\Downloads\Nicole_Project_(2)\Nicole Project\Signup.aspx.cs(10,22): updated definition
+C:\Users\Admin\Downloads\Nicole_Project_(2)\Nicole Project\Signup.aspx(12,22): updated definition
+C:\Users\Admin\Downloads\Nicole_Project_(2)\Nicole Project\Signup.aspx(52,36): updated reference
